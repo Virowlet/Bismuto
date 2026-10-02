@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.topo {
+    height: 88px;
+    padding: 0 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #412274;
+}
+
+.logo {
+    font-family: 'Manrope', sans-serif;
+    font-size: 27px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #412274;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 17px;
+    border-radius: 9px;
+    transition: background 0.2s;
+}
+
+.links {
+    color: white;
+}
+
+.links:hover {
+    background-color: #000;
+    color: #ffffff;
+}
+
+.inicio {
+    min-height: 570px;
+    padding: 75px 12% 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 75px;
+    background: linear-gradient(135deg, #f6f1ff 0%, #ffffff 62%, #eee6ff 100%);
+    border-bottom: 2px solid #000;
+}
+
+.inicio-texto {
+    width: 57%;
+}
+
+.etiqueta {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+h1, h2, h3 {
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.2;
+}
+
+.inicio h1 {
+    margin: 18px 0 22px;
+    font-size: 51px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.inicio-texto p {
+    max-width: 570px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.secao {
+    padding: 95px 12%;
+}
+
+.cabecalho-secao {
+    text-align: center;
+    margin-bottom: 42px;
+}
+
+.cabecalho-secao h2 {
+    margin: 10px 0 12px;
+    font-size: 37px;
+    letter-spacing: -1px;
+}
+
+.cabecalho-secao p {
+    font-size: 17px;
+}
+
+.propriedades {
+    background: #ffffff;
+    border-bottom: 2px solid #000;
+}
+
+.grade-propriedades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.card-propriedade {
+    position: relative;
+    min-height: 100px;
+    padding: 31px 34px;
+    border-radius: 15px;
+    background: #fff;
+    border: 2px solid #000;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.numero-card {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.card-propriedade h3 {
+    margin-bottom: 12px;
+    font-size: 21px;
+}
+
+.card-propriedade ul {
+    padding-left: 19px;
+}
+
+.secao-conteudo {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+    border-bottom: 2px solid #000;
+}
+
+.texto-secao {
+    flex: 1;
+    max-width: 700px;
+}
+
+.texto-secao h2 {
+    margin: 9px 0 23px;
+    font-size: 39px;
+    letter-spacing: -1px;
+}
+
+.texto-secao p {
+    margin-bottom: 17px;
+    font-size: 16px;
+    line-height: 1.9;
+    background-color: #eee6ff9b;
+    padding: 0.5rem;
+    border-radius: 15px;
+}
+
+.cartao-lateral {
+    width: 235px;
+    min-width: 235px;
+    min-height: 270px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-left: 50px;
+}
+
+.img-cartao {
+    width: 250px;
+    border-radius: 15px;
+}
+
+.cristais-secao {
+    background: #fff;
+}
+
+.cristais-layout {
+    text-align: center;
+    align-items: center;
+    border-radius: 22px;
+}
+
+.img-cristal {
+    border-radius: 15px;
+}
+
+.cristais-texto {
+    flex: 1;
+}
+
+.cristais-texto p {
+    margin-bottom: 15px;
+    line-height: 1.85;
+}
+
+.vitor-secao {
+    margin-top: 2px solid #412274;
+    text-align: center;
+    align-items: center;
+}
+
+.vitor-img{
+    width: 140px;
+}
+
+.img-inicial {
+    border-radius: 15px;
+    width: 350px;
+}
+
+.destaque {
+    color: #6132b8;
+}
+
+.rodape {
+    min-height: 105px;
+    padding: 25px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #24163c;
+    color: #d5cbe7;
+}
+
+.rodape p {
+    font-size: 13px;
+}
+
+.img-bismuto {
+    border-radius: 15px;
+    width: 250px;
+}
+
+.div-img-bismuto {
+    text-align: center;
+}
+
+
+/* ===== RESPONSIVIDADE PARA TABLETS ===== */
+
+@media (max-width: 1024px) {
+
+    .topo {
+        padding: 0 5%;
+    }
+
+    .inicio {
+        padding: 60px 6%;
+        gap: 35px;
+    }
+
+    .inicio h1 {
+        font-size: 40px;
+    }
+
+    .inicio-texto {
+        width: 55%;
+    }
+
+    .img-inicial {
+        width: 280px;
+        max-width: 100%;
+    }
+
+    .secao {
+        padding: 70px 6%;
+    }
+
+    .grade-propriedades {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card-propriedade {
+        margin: 0;
+        padding: 25px;
+    }
+
+    .secao-conteudo {
+        gap: 25px;
+    }
+
+    .cartao-lateral {
+        min-width: 180px;
+        width: 180px;
+        margin-left: 10px;
+        padding: 15px;
+    }
+
+    .img-cartao {
+        max-width: 100%;
+    }
+
+    .img-cristal {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+/* ===== RESPONSIVIDADE PARA CELULARES ===== */
+
+@media (max-width: 768px) {
+
+    .topo {
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .menu a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .inicio {
+        min-height: auto;
+        padding: 50px 25px;
+        flex-direction: column;
+        text-align: center;
+        gap: 35px;
+    }
+
+    .inicio-texto {
+        width: 100%;
+    }
+
+    .inicio h1 {
+        font-size: 35px;
+        letter-spacing: -1px;
+    }
+
+    .inicio-texto p {
+        font-size: 16px;
+    }
+
+    .img-inicial {
+        width: 300px;
+        max-width: 100%;
+    }
+
+    .secao {
+        padding: 55px 25px;
+    }
+
+    .cabecalho-secao h2 {
+        font-size: 30px;
+    }
+
+    .grade-propriedades {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card-propriedade {
+        padding: 25px;
+    }
+
+    .secao-conteudo {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 25px;
+    }
+
+    .texto-secao {
+        max-width: 100%;
+    }
+
+    .texto-secao h2 {
+        font-size: 32px;
+    }
+
+    .cartao-lateral {
+        width: 100%;
+        min-width: 0;
+        min-height: auto;
+        margin: 0;
+        padding: 15px;
+    }
+
+    .img-cartao {
+        width: 250px;
+        max-width: 100%;
+    }
+
+    .div-img-bismuto {
+        margin-top: 25px;
+    }
+
+    .img-bismuto {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .cristais-layout {
+        width: 100%;
+    }
+
+    .img-cristal {
+        width: 100%;
+        height: auto;
+    }
+
+    .cristais-texto {
+        width: 100%;
+    }
+
+    .rodape {
+        padding: 30px 20px;
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+
+/* ===== RESPONSIVIDADE PARA CELULARES PEQUENOS ===== */
+
+@media (max-width: 480px) {
+
+    .menu a {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .inicio h1 {
+        font-size: 29px;
+    }
+
+    .inicio {
+        padding: 40px 20px;
+    }
+
+    .secao {
+        padding: 45px 20px;
+    }
+
+    .cabecalho-secao h2 {
+        font-size: 26px;
+    }
+
+    .card-propriedade {
+        padding: 20px;
+    }
+
+    .texto-secao h2 {
+        font-size: 28px;
+    }
+
+    .texto-secao p {
+        font-size: 15px;
+    }
+
+    .img-inicial {
+        width: 100%;
+    }
+}
