@@ -215,6 +215,7 @@ h1, h2, h3 {
 .img-cristal {
     border-radius: 15px;
     border-image: linear-gradient(to right, red, orange, yellow, green, blue, purple) 1;
+    border: 6px solid transparent;
 }
 
 .cristais-texto {
