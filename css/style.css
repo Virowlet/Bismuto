@@ -235,6 +235,10 @@ h1, h2, h3 {
     width: 140px;
 }
 
+.prof-img{
+    width: 140px;
+}
+
 .img-inicial {
     border-radius: 15px;
     width: 350px;
@@ -254,6 +258,13 @@ h1, h2, h3 {
     color: #d5cbe7;
 }
 
+.titulo-rodape {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
 .rodape p {
     font-size: 13px;
 }
@@ -267,39 +278,52 @@ h1, h2, h3 {
     text-align: center;
 }
 
+/* ===== RESPONSIVIDADE ===== */
 
-/* ===== RESPONSIVIDADE PARA TABLETS ===== */
-
+/* TABLETS */
 @media (max-width: 1024px) {
 
     .topo {
         padding: 0 5%;
     }
 
-    .inicio {
-        padding: 60px 6%;
-        gap: 35px;
+    .menu {
+        gap: 5px;
     }
 
-    .inicio h1 {
-        font-size: 40px;
+    .menu a {
+        padding: 9px 12px;
+        font-size: 14px;
+    }
+
+    .inicio {
+        padding: 60px 7%;
+        gap: 40px;
     }
 
     .inicio-texto {
         width: 55%;
     }
 
+    .inicio h1 {
+        font-size: 42px;
+    }
+
+    .inicio-texto p {
+        font-size: 17px;
+    }
+
     .img-inicial {
-        width: 280px;
+        width: 300px;
         max-width: 100%;
     }
 
     .secao {
-        padding: 70px 6%;
+        padding: 70px 7%;
     }
 
     .grade-propriedades {
-        grid-template-columns: 1fr 1fr;
+        gap: 15px;
     }
 
     .card-propriedade {
@@ -312,13 +336,18 @@ h1, h2, h3 {
     }
 
     .cartao-lateral {
-        min-width: 180px;
-        width: 180px;
-        margin-left: 10px;
+        width: 200px;
+        min-width: 200px;
+        margin-left: 0;
         padding: 15px;
     }
 
     .img-cartao {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .img-bismuto {
         max-width: 100%;
     }
 
@@ -326,11 +355,14 @@ h1, h2, h3 {
         max-width: 100%;
         height: auto;
     }
+
+    .rodape {
+        padding: 25px 5%;
+    }
 }
 
 
-/* ===== RESPONSIVIDADE PARA CELULARES ===== */
-
+/* CELULARES */
 @media (max-width: 768px) {
 
     .topo {
@@ -342,18 +374,23 @@ h1, h2, h3 {
 
     .logo {
         font-size: 24px;
+        padding: 12px 18px;
     }
 
     .menu {
-        flex-wrap: wrap;
+        width: 100%;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 5px;
     }
 
     .menu a {
-        padding: 8px 12px;
-        font-size: 14px;
+        padding: 8px 10px;
+        font-size: 13px;
     }
+
+
+    /* INÍCIO */
 
     .inicio {
         min-height: auto;
@@ -373,6 +410,7 @@ h1, h2, h3 {
     }
 
     .inicio-texto p {
+        max-width: 100%;
         font-size: 16px;
     }
 
@@ -381,13 +419,27 @@ h1, h2, h3 {
         max-width: 100%;
     }
 
+
+    /* SEÇÕES */
+
     .secao {
         padding: 55px 25px;
+    }
+
+    .cabecalho-secao {
+        margin-bottom: 30px;
     }
 
     .cabecalho-secao h2 {
         font-size: 30px;
     }
+
+    .cabecalho-secao p {
+        font-size: 15px;
+    }
+
+
+    /* PROPRIEDADES */
 
     .grade-propriedades {
         grid-template-columns: 1fr;
@@ -395,21 +447,34 @@ h1, h2, h3 {
     }
 
     .card-propriedade {
+        margin: 0;
         padding: 25px;
     }
+
+    .card-propriedade h3 {
+        font-size: 20px;
+    }
+
+
+    /* HISTÓRIA / IMPORTÂNCIA / RISCOS */
 
     .secao-conteudo {
         flex-direction: column;
         align-items: stretch;
-        gap: 25px;
+        gap: 30px;
     }
 
     .texto-secao {
+        width: 100%;
         max-width: 100%;
     }
 
     .texto-secao h2 {
         font-size: 32px;
+    }
+
+    .texto-secao p {
+        font-size: 16px;
     }
 
     .cartao-lateral {
@@ -418,6 +483,7 @@ h1, h2, h3 {
         min-height: auto;
         margin: 0;
         padding: 15px;
+        box-sizing: border-box;
     }
 
     .img-cartao {
@@ -425,14 +491,21 @@ h1, h2, h3 {
         max-width: 100%;
     }
 
+
+    /* IMAGEM DO BISMUTO */
+
     .div-img-bismuto {
         margin-top: 25px;
     }
 
     .img-bismuto {
+        width: 250px;
         max-width: 100%;
         height: auto;
     }
+
+
+    /* CRISTAIS */
 
     .cristais-layout {
         width: 100%;
@@ -440,6 +513,7 @@ h1, h2, h3 {
 
     .img-cristal {
         width: 100%;
+        max-width: 100%;
         height: auto;
     }
 
@@ -447,31 +521,98 @@ h1, h2, h3 {
         width: 100%;
     }
 
+
+    /* DESENVOLVEDOR */
+
+    .vitor-secao {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .vitor-img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    /* RODAPÉ */
+
     .rodape {
         padding: 30px 20px;
         flex-direction: column;
-        gap: 15px;
+        gap: 20px;
         text-align: center;
+    }
+
+    .titulo-rodape {
+        margin-left: 0;
+        margin-bottom: 15px;
+        font-size: 21px;
+    }
+
+    .rodape p {
+        font-size: 13px;
+    }
+
+    .professores {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
     }
 }
 
 
-/* ===== RESPONSIVIDADE PARA CELULARES PEQUENOS ===== */
-
+/* CELULARES PEQUENOS */
 @media (max-width: 480px) {
 
+    .topo {
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 22px;
+        padding: 10px 15px;
+    }
+
+    .menu {
+        gap: 3px;
+    }
+
     .menu a {
-        padding: 8px;
-        font-size: 13px;
+        padding: 7px 8px;
+        font-size: 12px;
+    }
+
+
+    /* INÍCIO */
+
+    .inicio {
+        padding: 40px 20px;
+        gap: 25px;
     }
 
     .inicio h1 {
         font-size: 29px;
+        margin: 15px 0 18px;
     }
 
-    .inicio {
-        padding: 40px 20px;
+    .inicio-texto p {
+        font-size: 15px;
+        line-height: 1.7;
     }
+
+    .etiqueta {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .img-inicial {
+        width: 100%;
+        max-width: 300px;
+    }
+
+
+    /* SEÇÕES */
 
     .secao {
         padding: 45px 20px;
@@ -481,9 +622,28 @@ h1, h2, h3 {
         font-size: 26px;
     }
 
+    .cabecalho-secao p {
+        font-size: 14px;
+    }
+
+
+    /* CARDS */
+
     .card-propriedade {
         padding: 20px;
     }
+
+    .card-propriedade h3 {
+        font-size: 18px;
+    }
+
+    .card-propriedade p,
+    .card-propriedade li {
+        font-size: 14px;
+    }
+
+
+    /* TEXTOS */
 
     .texto-secao h2 {
         font-size: 28px;
@@ -491,9 +651,57 @@ h1, h2, h3 {
 
     .texto-secao p {
         font-size: 15px;
+        line-height: 1.8;
     }
 
-    .img-inicial {
+
+    /* IMAGENS */
+
+    .img-cartao {
         width: 100%;
+        max-width: 250px;
+    }
+
+    .img-bismuto {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .img-cristal {
+        width: 100%;
+    }
+
+
+    /* DESENVOLVEDOR */
+
+    .vitor-secao h2 {
+        font-size: 25px;
+    }
+
+    .vitor-secao h3 {
+        font-size: 17px;
+    }
+
+
+    /* RODAPÉ */
+
+    .rodape {
+        padding: 25px 15px;
+    }
+
+    .rodape .logo {
+        font-size: 21px;
+    }
+
+    .titulo-rodape {
+        font-size: 18px;
+    }
+
+    .rodape p {
+        font-size: 12px;
+    }
+
+    .professores .vitor-img {
+        width: 80px;
     }
 }
