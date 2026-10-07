@@ -244,6 +244,9 @@ h1, h2, h3 {
 
 .prof-img{
     width: 140px;
+    height: 140px;
+    margin: 10px;
+    border-radius: 45px;
 }
 
 .img-inicial {
