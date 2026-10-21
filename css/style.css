@@ -715,3 +715,90 @@ h1, h2, h3 {
         width: 80px;
     }
 }
+/* ===== REFERÊNCIAS ===== */
+
+.referencias {
+    padding: 60px 12%;
+    background: #f6f1ff;
+    border-top: 2px solid #000;
+}
+
+.referencias h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 32px;
+    color: #412274;
+}
+
+.lista-referencias {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.referencia {
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #d5cbe7;
+    border-radius: 12px;
+    overflow-wrap: anywhere;
+}
+
+.referencia h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #412274;
+}
+
+.referencia p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.referencia a {
+    color: #6132b8;
+    overflow-wrap: anywhere;
+}
+
+.referencia a:hover {
+    color: #24163c;
+}
+
+
+/* TABLETS E CELULARES */
+
+@media (max-width: 768px) {
+    .referencias {
+        padding: 45px 25px;
+    }
+
+    .referencias h2 {
+        font-size: 28px;
+    }
+
+    .lista-referencias {
+        grid-template-columns: 1fr;
+    }
+
+    .referencia {
+        padding: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .referencias {
+        padding: 35px 20px;
+    }
+
+    .referencias h2 {
+        font-size: 25px;
+    }
+
+    .referencia h3 {
+        font-size: 16px;
+    }
+
+    .referencia p {
+        font-size: 13px;
+    }
+}
